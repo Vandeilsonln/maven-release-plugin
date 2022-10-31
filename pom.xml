@@ -33,6 +33,12 @@
 			<version>2.7.5</version>
 			<scope>test</scope>
 		</dependency>
+
+		<dependency>
+			<groupId>com.h2database</groupId>
+			<artifactId>h2</artifactId>
+			<version>2.1.214</version>
+		</dependency>
 	</dependencies>
 
 	<build>
@@ -74,23 +80,6 @@
 			</extension>
 		</extensions>
 	</build>
-
-	<repositories>
-		<repository>
-			<id>nexus.snapshot</id>
-			<url>http://localhost:8081/repository/nexus-snapshot/</url>
-			<snapshots>
-				<enabled>true</enabled>
-			</snapshots>
-		</repository>
-		<repository>
-			<id>nexus.release</id>
-			<url>http://localhost:8081/repository/nexus-release/</url>
-			<snapshots>
-				<enabled>false</enabled>
-			</snapshots>
-		</repository>
-	</repositories>
 
 	<distributionManagement>
 		<snapshotRepository>
