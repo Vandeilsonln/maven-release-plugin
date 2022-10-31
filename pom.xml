@@ -5,7 +5,7 @@
 
 	<groupId>com.example</groupId>
 	<artifactId>teste-lib</artifactId>
-	<version>0.0.2-SNAPSHOT</version>
+	<version>0.0.2</version>
 	<packaging>jar</packaging>
 
 	<name>teste-lib</name>
@@ -83,6 +83,13 @@
 				<enabled>true</enabled>
 			</snapshots>
 		</repository>
+		<repository>
+			<id>nexus.release</id>
+			<url>http://localhost:8081/repository/nexus-release/</url>
+			<snapshots>
+				<enabled>false</enabled>
+			</snapshots>
+		</repository>
 	</repositories>
 
 	<distributionManagement>
@@ -90,6 +97,10 @@
 			<id>nexus.snapshot</id>
 			<url>http://localhost:8081/repository/nexus-snapshot/</url>
 		</snapshotRepository>
+		<repository>
+			<id>nexus.snapshot</id>
+			<url>http://localhost:8081/repository/nexus-release/</url>
+		</repository>
 	</distributionManagement>
 
 </project>
