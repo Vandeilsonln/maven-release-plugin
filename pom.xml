@@ -4,7 +4,7 @@
 
 	<groupId>com.example</groupId>
 	<artifactId>teste-lib</artifactId>
-	<version>0.0.3</version>
+	<version>0.0.4-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
 	<name>teste-lib</name>
@@ -83,7 +83,7 @@
 	<scm>
 		<developerConnection>scm:git:git@github.com:Vandeilsonln/maven-release-plugin.git</developerConnection>
 		<url>https://github.com/Vandeilsonln/maven-release-plugin</url>
-	  <tag>teste-lib-0.0.3</tag>
+	  <tag>teste-lib-0.0.1</tag>
   </scm>
 
 	<distributionManagement>
