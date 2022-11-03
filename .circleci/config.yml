@@ -25,9 +25,9 @@ jobs:
       # Then Release the new version
       - run:
           name: Release
-          command: >-
-            git config --global user.mail "vandernobrel@gmail.com" &&
-            git config --global user.name "Via Circle CI" &&
+          command: |
+            git config user.mail "vandernobrel@gmail.com" &&
+            git config user.name "Via Circle CI" &&
             mvn --batch-mode release:prepare release:perform -s .circleci/settings.xml
 
 # Invoke jobs via workflows
