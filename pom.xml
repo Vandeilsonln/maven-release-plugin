@@ -14,6 +14,7 @@
 	<properties>
 		<java.version>17</java.version>
 		<kotlin.version>1.6.21</kotlin.version>
+		<project.scm.id>github</project.scm.id>
 	</properties>
 	<dependencies>
 		<dependency>
@@ -93,5 +94,11 @@
 			<url>packagecloud+https://packagecloud.io/vandernobrel/snapshot</url>
 		</snapshotRepository>
 	</distributionManagement>
+
+	<scm>
+		<developerConnection>scm:git:git@github.com:Vandeilsonln/maven-release-plugin.git</developerConnection>
+		<url>https://github.com/Vandeilsonln/maven-release-plugin</url>
+		<tag>HEAD</tag>
+	</scm>
 
 </project>
