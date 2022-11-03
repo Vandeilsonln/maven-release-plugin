@@ -8,5 +8,8 @@
             <id>packagecloud.snapshot</id>
             <password>${env.PACKAGE_CLOUD_RELEASE}</password>
         </server>
+        <server>
+            <id>github</id>
+        </server>
     </servers>
 </settings>

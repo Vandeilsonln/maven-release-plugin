@@ -5,7 +5,7 @@
 
 	<groupId>com.example</groupId>
 	<artifactId>teste-lib</artifactId>
-	<version>0.1.1</version>
+	<version>0.2.0</version>
 	<packaging>jar</packaging>
 
 	<name>teste-lib</name>
@@ -63,6 +63,14 @@
 						<version>${kotlin.version}</version>
 					</dependency>
 				</dependencies>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-release-plugin</artifactId>
+				<version>2.5.3</version>
+				<configuration>
+					<scmCommentPrefix>[scm commit] [skip ci]</scmCommentPrefix>
+				</configuration>
 			</plugin>
 		</plugins>
 

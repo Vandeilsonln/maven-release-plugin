@@ -23,6 +23,8 @@ jobs:
           name: Build
           command: mvn -B -DskipTests clean package
       # Then Release the new version
+      - run: git config user.mail "vandernobrel@gmail.com"
+      - run: git config user.name "Via Circle CI"
       - run:
           name: Release
           command: mvn --batch-mode release:prepare release:perform -s .circleci/settings.xml
