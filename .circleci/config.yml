@@ -23,6 +23,7 @@ jobs:
           name: Build
           command: mvn -B -DskipTests clean package
       # Then Release the new version
+
       - run:
           name: Release
           command: |
