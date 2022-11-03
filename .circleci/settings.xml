@@ -1,0 +1,12 @@
+<settings>
+    <servers>
+        <server>
+            <id>packagecloud.release</id>
+            <password>${env.PACKAGE_CLOUD_RELEASE}</password>
+        </server>
+        <server>
+            <id>packagecloud.snapshot</id>
+            <password>${env.PACKAGE_CLOUD_RELEASE}</password>
+        </server>
+    </servers>
+</settings>
