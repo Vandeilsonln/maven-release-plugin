@@ -22,10 +22,10 @@ jobs:
       - run:
           name: Build
           command: mvn -B -DskipTests clean package
-      # Then deploy
+      # Then Release the new version
       - run:
-          name: Deploy
-          command: mvn deploy -s .circleci/settings.xml
+          name: Release
+          command: mvn --batch-mode release:prepare release:perform -s .circleci/settings.xml
 
 # Invoke jobs via workflows
 # See: https://circleci.com/docs/2.0/configuration-reference/#workflows
